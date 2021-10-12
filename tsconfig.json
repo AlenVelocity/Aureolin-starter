@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": [
+      "ESNext"
+    ],                         
+    "module": "commonjs",
+    "declaration": true,                     
+    "outDir": "./dist",                        
+    "resolveJsonModule": true,
+    "strict": true,                           
+    "esModuleInterop": true,                  
+    "skipLibCheck": true,       
+    "experimentalDecorators": true,              
+    "forceConsistentCasingInFileNames": true,
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "tests/**/*"
+  ]
+}
