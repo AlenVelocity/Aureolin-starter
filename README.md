@@ -19,19 +19,23 @@ start: Starts the built project
 [root]
 |- .eslintignore
 |- .eslintrc.js
-|- package.json
-|- README.md
 |- .gitignore
 |- .prettierrc
-|- .gitignore
+|- package.json
+|- package-lock.json
+|- README.md
 |- tsconfig.json
 |- src
-    |- main.ts (entry point)
     |- controllers
-        |- Home.ts
-        |- Hello.ts
-    |- middlewares
-        |- Logger
+        |- HelloController.ts
+        |- HomeController.ts
+    |- middleware
+        |- Aureolin.ts
+    |- Providers
+        |- PackageProvider.ts
+        |- TimeProvider.ts
+    |- main.ts (entry point)
+
 ```
 
 # Routes
@@ -39,8 +43,11 @@ start: Starts the built project
 / (GET)
 /about 
 /routes
+/time
+/about
 /hello
 /hello/:name
 /hello/:name/:age
+/hello/:name/:age/:place
 ```
 
