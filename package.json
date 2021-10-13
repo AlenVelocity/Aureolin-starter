@@ -40,6 +40,6 @@
     "typescript": "^4.3.5"
   },
   "dependencies": {
-    "aureolin": "github:alensaito1/aureolin"
+    "aureolin": "^0.0.2"
   }
 }
