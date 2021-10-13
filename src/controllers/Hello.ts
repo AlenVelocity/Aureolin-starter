@@ -1,4 +1,4 @@
-import { Controller, Get, Context } from 'aureolin'
+import { Controller, Get, Context, Ctx, Param } from 'aureolin'
 
 @Controller('/hello')
 export default class Hello {
@@ -8,12 +8,12 @@ export default class Hello {
     }
 
     @Get('/:name')
-    public hello({ params: { name } }: Context): string {
+    public hello(@Ctx() { params: { name } }: Context): string {
         return `Hello ${name}!`
     }
 
     @Get('/:name/:age')
-    public helloWithAge({ params: { name, age } }: Context): string {
+    public helloWithAge(@Param('name') name: string, @Param('age') age: string): string {
         return `Hello ${name}, You're Probably ${age} years old!`
     }
 }
