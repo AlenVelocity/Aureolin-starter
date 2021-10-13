@@ -36,7 +36,8 @@ export default class HomeController {
             '/routes': 'Routes',
             '/hello/': 'Hello',
             '/hello/:name': 'Hello {name}',
-            '/hello/:name/:age': 'Hello {name} {age}'
+            '/hello/:name/:age': 'Hello {name} {age}',
+            '/hello/:name/:age/:place': 'Hello {name} {age} {place}'
         }
     }
 }
