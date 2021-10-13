@@ -2,7 +2,12 @@ import { AureolinMiddleware, Middleware, Context } from 'aureolin'
 
 @Middleware()
 export default class Aureolin implements AureolinMiddleware {
-    public use = (ctx: Context): void => {
-        ctx.res.setHeader('X-Powered-By', 'Aureolin')
+    private package = async () => {
+        return await import('../../package.json')
+    }
+
+    public use = async (ctx: Context): Promise<void> => {
+        ctx.res.setHeader('X-Aureolin', 'Aureolin')
+        ctx.res.setHeader('X-Aureolin-Version', (await this.package()).version)
     }
 }
