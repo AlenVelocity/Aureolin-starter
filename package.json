@@ -1,6 +1,6 @@
 {
   "name": "aureolin",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Rest API Framework",
   "main": "dist",
   "types": "dist",
@@ -18,7 +18,11 @@
   "keywords": [
     "api",
     "rest",
-    "express"
+    "koa",
+    "framework",
+    "example",
+    "jsx",
+    "typescript"
   ],
   "author": {
     "name": "Alen Yohannan",
@@ -32,6 +36,7 @@
   "issues": "https://github.com/Alensaito1/aureolin",
   "devDependencies": {
     "@types/node": "^16.4.13",
+    "@types/react": "^17.0.33",
     "@typescript-eslint/eslint-plugin": "^4.29.1",
     "@typescript-eslint/parser": "^4.29.1",
     "eslint": "^7.32.0",
@@ -40,6 +45,6 @@
     "typescript": "^4.3.5"
   },
   "dependencies": {
-    "aureolin": "^0.0.7-0"
+    "aureolin": "^0.0.7"
   }
 }
