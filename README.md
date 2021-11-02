@@ -28,9 +28,9 @@ start: Starts the built project
 |- src
     |- controllers
         |- HelloController.ts
-        |- HomeController.ts
+        |- HomeController.tsx
     |- middleware
-        |- Aureolin.ts
+        |- AureolinX.ts
     |- Providers
         |- PackageProvider.ts
         |- TimeProvider.ts
