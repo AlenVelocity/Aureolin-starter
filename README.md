@@ -1,5 +1,7 @@
 <div align=center>
 
+<img src="https://i.ibb.co/TBGmcVJ/Aureolin.png" alt="Aureolin" height=128 width=128></img>
+
 # Aureolin Starter
 Starter Project for Aureolin
 
