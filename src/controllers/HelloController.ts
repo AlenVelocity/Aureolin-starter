@@ -8,7 +8,7 @@ export default class HelloController {
     }
 
     /**
-     * 
+     *
      * @returns {string}
      * @memberof HelloController
      * @example http://localhost:3000/hello/John
@@ -19,7 +19,7 @@ export default class HelloController {
     }
 
     /**
-     * 
+     *
      * @returns {string}
      * @memberof HelloController
      * @example http://localhost:3000/hello/John/20
@@ -30,7 +30,7 @@ export default class HelloController {
     }
 
     /**
-     * 
+     *
      * @returns {string}
      * @memberof HelloController
      * @example http://localhost:3000/hello/John/20/New York

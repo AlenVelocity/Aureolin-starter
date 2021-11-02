@@ -1,14 +1,18 @@
-import { Controller, Get, Inject } from 'aureolin'
+import { React, Controller, Get, Inject, ControllerMiddleware } from 'aureolin'
+import { Aureolin } from '../components/Aureolin'
 import type PackageProvider from '../providers/PackageProvider'
 import type TimeProvider from '../providers/TimeProvider'
+import AureolinX from '../middleware/AureolinX'
+import Card from '../components/Card'
 
 @Controller('/')
+@ControllerMiddleware([AureolinX()])
 export default class HomeController {
     constructor(@Inject('time') public tm: TimeProvider, @Inject('package') public pkg: PackageProvider) {}
 
     @Get('/')
-    public index(): string {
-        return 'Welcome to Aureolin!'
+    public index(): JSX.Element {
+        return (<Aureolin/>)
     }
 
     @Get('about')
