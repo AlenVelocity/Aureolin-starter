@@ -9,10 +9,10 @@
   ],
   "scripts": {
     "build": "tsc -p .",
-    "lint": "eslint \"src/**/*.ts\"",
-    "prepare": "npm run build",
-    "dev": "ts-node src/main.ts",
-    "start": "node dist/main.js",
+    "lint": "eslint \"src/**/*.ts\" --fix",
+    "dev": "NODE_ENV=development ts-node src/main.ts",
+    "start": "NODE_ENV=production node dist/main.js",
+    "prebuild": "rimraf dist",
     "fmt": "prettier --config .prettierrc \"src/**/*.ts\" --write"
   },
   "keywords": [
@@ -45,6 +45,6 @@
     "typescript": "^4.3.5"
   },
   "dependencies": {
-    "aureolin": "^0.0.7"
+    "aureolin": "github:alensaito1/aureolin"
   }
 }
