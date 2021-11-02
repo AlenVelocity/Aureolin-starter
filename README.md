@@ -28,6 +28,9 @@ start: Starts the built project
 |- README.md
 |- tsconfig.json
 |- src
+    |- components
+        |- Aureolin.tsx
+        |- Card.tsx
     |- controllers
         |- HelloController.ts
         |- HomeController.tsx
