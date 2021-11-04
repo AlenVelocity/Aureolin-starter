@@ -24,7 +24,7 @@ This is a starter project for Aureolin. Aureolin is an open source project that 
 * 🟩 [Prettier](https://prettier.io/) Integration
 * 🔳 Hot Restart (Powered by [Nodemon](https://npmjs.com/package/ts-node) and [TS-Node](https://npmjs.com/package/nodemon))
 
-## 🟦 Project Structure
+## 🟩 Project Structure
 
 ```
 ├── .eslintignore
