@@ -7,7 +7,7 @@ export default class HelloController {
         return 'Hello'
     }
 
-    @Get(':name')
+    @Get('/:name')
     public hello(@Ctx() ctx: Context): string {
         return `Hello ${ctx.params.name}!`
     }
